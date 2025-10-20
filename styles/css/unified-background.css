@@ -1,0 +1,44 @@
+.unified-background-section {
+    background: linear-gradient(rgba(255, 255, 255, 0.93), rgba(255, 255, 255, 0.93)), url('../../assets/images/backgrounds/background_placeholder.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.content-block {
+    padding: 80px 0;
+    position: relative;
+}
+
+/* Add some visual separation between blocks */
+.content-block:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+}
+
+/* Ensure existing styles still work */
+.unified-background-section .section-title {
+    color: #2c3e50;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .content-block {
+        padding: 60px 0;
+    }
+    
+    .unified-background-section .section-title {
+        font-size: 2rem;
+    }
+}
