@@ -1,0 +1,104 @@
+.about {
+    padding: 70px 0;
+    background: linear-gradient(rgba(255, 255, 255, 0.93), rgba(255, 255, 255, 0.93)), url('../../assets/images/backgrounds/background_placeholder.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.about-content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #2c3e50;
+    font-weight: 300;
+}
+
+.company-intro {
+    font-size: 1.2em;
+    line-height: 1.8;
+    color: #2c3e50;
+    margin-bottom: 40px;
+    text-align: justify;
+}
+
+.product-list {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+    margin: 30px 0;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    backdrop-filter: blur(10px);
+}
+
+.product-list h3 {
+    color: #4A90E2;
+    font-size: 1.4em;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.product-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.product-list li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 15px;
+    font-size: 1.1em;
+    color: #2c3e50;
+    line-height: 1.6;
+}
+
+.product-list li::before {
+    content: "•";
+    color: #4A90E2;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+.company-description {
+    font-size: 1.2em;
+    line-height: 1.8;
+    color: #2c3e50;
+    margin-top: 40px;
+    text-align: justify;
+}
+
+@media (max-width: 768px) {
+    .about {
+        padding: 60px 0;
+    }
+
+    .about-content {
+        padding: 0 15px;
+    }
+
+    .section-title {
+        font-size: 2em;
+        margin-bottom: 30px;
+    }
+
+    .company-intro,
+    .company-description {
+        font-size: 1.1em;
+        line-height: 1.6;
+    }
+
+    .product-list {
+        padding: 30px 20px;
+    }
+
+    .product-list li {
+        font-size: 1em;
+    }
+}
