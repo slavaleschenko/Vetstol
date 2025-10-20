@@ -1,8 +1,8 @@
 .contact {
     padding: 80px 0;
     background: 
-        linear-gradient(rgba(53, 122, 189, 0.92), rgba(41, 95, 147, 0.92)),
-        url('../../assets/images/backgrounds/background_placeholder.jpg');
+        linear-gradient(rgba(74, 144, 226, 0.7), rgba(53, 122, 189, 0.7)),
+        url('../../assets/images/backgrounds/background_placeholder_optimized.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;

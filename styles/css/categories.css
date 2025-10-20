@@ -40,7 +40,7 @@
 
 .categories {
     padding: 20px 0;
-    background: linear-gradient(rgba(255, 255, 255, 0.93), rgba(255, 255, 255, 0.93)), url('../../assets/images/backgrounds/background_placeholder.jpg');
+    background: linear-gradient(rgba(255, 255, 255, 0.93), rgba(255, 255, 255, 0.93)), url('../../assets/images/backgrounds/background_placeholder_optimized.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
