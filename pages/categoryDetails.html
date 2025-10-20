@@ -6,6 +6,7 @@
     <title>Vetstol - Категорії</title>
     <link rel="stylesheet" href="../styles/css/style.css">
     <link rel="stylesheet" href="../styles/css/categories.css">
+    <link rel="stylesheet" href="../styles/css/contact.css">
 </head>
 <body>
     <header class="main-header">
@@ -18,7 +19,7 @@
                     <a href="../index.html#categories" class="nav-link">Категорії</a>
                     <a href="../index.html#about" class="nav-link">Про нас</a>
                     <a href="../index.html#advantages" class="nav-link">Переваги</a>
-                    <a href="../index.html#contact" class="nav-link">Контакти</a>
+                    <a href="#contact" class="nav-link">Контакти</a>
                 </div>
                 <button class="mobile-menu-toggle" aria-label="Відкрити меню">
                     <span></span>
@@ -60,6 +61,56 @@
             </section>
         </div>
     </main>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Зв'яжіться з нами</h3>
+                    <div class="contact-item">
+                        <img src="../assets/icons/email.png" alt="Email" class="contact-icon">
+                        <a href="mailto:vetstolua@gmail.com" class="contact-link">vetstolua@gmail.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <img src="../assets/icons/telephone.png" alt="Телефон" class="contact-icon">
+                        <a href="tel:+380671234567" class="contact-link">+38 (067) 123-45-67</a>
+                    </div>
+                    <div class="contact-item">
+                        <img src="../assets/icons/express-delivery.png" alt="Доставка" class="contact-icon">
+                        <span>Україна, доставка по всій території</span>
+                    </div>
+                    <div class="contact-item social-link">
+                        <img src="../assets/icons/instagram.png" alt="Instagram" class="contact-icon">
+                        <a href="https://www.instagram.com/vetstol_ua/" target="_blank">@vetstol_ua</a>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Ваше ім'я" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Ваш email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Ваш телефон">
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Ваше повідомлення"></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Відправити</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Vetstolua. Всі права захищені.</p>
+        </div>
+    </footer>
 
     <script type="module">
         import dataStore from '../js/models/dataStore.js';
