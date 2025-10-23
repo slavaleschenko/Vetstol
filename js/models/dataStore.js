@@ -88,7 +88,7 @@ class DataStore {
                     features: 'Спеціальний виріз для УЗД датчика',
                     surface: 'Тепла поверхня з антиковзаючим покриттям'
                 },
-                images: ['../assets/images/products/product_placeholder.jpg'],
+                images: ['../assets/images/products/product_id_3.jpeg'],
                 price: 28000
             },
             {
@@ -188,7 +188,7 @@ class DataStore {
                     features: 'Антиковзаюче покриття дна, кріплення для фіксації',
                     accessories: 'Душовий шланг, тримач для шампуню'
                 },
-                images: ['../assets/images/products/product_placeholder.jpg'],
+                images: ['../assets/images/products/product_id_9.jpeg'],
                 price: 32000
             },
             {
@@ -290,7 +290,8 @@ class DataStore {
                     customization: 'Повна адаптація під приміщення та вимоги замовника'
                 },
                 images: ['../assets/images/products/product_placeholder.jpg'],
-                price: 'Ціна розраховується індивідуально'
+                price: null,
+                priceType: 'custom' // 'fixed' for regular prices, 'custom' for on-request
             }
         ];
 
@@ -304,7 +305,8 @@ class DataStore {
                 prod.category,
                 prod.specifications,
                 prod.images,
-                prod.price
+                prod.price,
+                prod.priceType || 'fixed'
             );
             this.products.set(prod.id, product);
             this.categories.get(prod.category)?.addProduct(product);

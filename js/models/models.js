@@ -31,7 +31,7 @@ class Category {
 
 // Product Model
 class Product {
-    constructor(id, name, description, categoryId, category, specifications, images, price) {
+    constructor(id, name, description, categoryId, category, specifications, images, price, priceType = 'fixed') {
         this.id = id;
         this.name = name;
         this.description = description;
@@ -40,6 +40,7 @@ class Product {
         this.specifications = specifications;
         this.images = images;
         this.price = price;
+        this.priceType = priceType;    // 'fixed' for regular prices, 'custom' for on-request
     }
 
     toJSON() {
@@ -51,7 +52,8 @@ class Product {
             category: this.category,
             specifications: this.specifications,
             images: this.images,
-            price: this.price
+            price: this.price,
+            priceType: this.priceType
         };
     }
 }
