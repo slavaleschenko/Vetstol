@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vetstol - Деталі продукту</title>
+    <link rel="stylesheet" href="../styles/css/style.css">
+    <link rel="stylesheet" href="../styles/css/categories.css">
+    <link rel="stylesheet" href="../styles/css/contact.css">
+    <link rel="stylesheet" href="../styles/css/product-details.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <nav class="nav-wrapper">
+                <a href="../index.html" class="nav-logo">
+                    <img src="../assets/logo/vetstol_logo.png" alt="Vetstol Logo">
+                </a>
+                <div class="nav-menu">
+                    <a href="../index.html#categories" class="nav-link">Категорії</a>
+                    <a href="../index.html#about" class="nav-link">Про нас</a>
+                    <a href="../index.html#advantages" class="nav-link">Переваги</a>
+                    <a href="#contact" class="nav-link">Контакти</a>
+                </div>
+                <button class="mobile-menu-toggle" aria-label="Відкрити меню">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <div class="breadcrumbs">
+        <div class="container">
+            <a href="../index.html">Головна</a>
+            <span class="separator">›</span>
+            <a href="#" id="categoryBreadcrumb">Категорія</a>
+            <span class="separator">›</span>
+            <span id="productBreadcrumb" class="current-page">Деталі продукту</span>
+        </div>
+    </div>
+
+    <main class="product-details-page">
+        <div class="container">
+            <!-- Product Hero Section -->
+            <section class="product-hero">
+                <div class="product-image-section">
+                    <div class="product-main-image">
+                        <img id="productMainImage" src="" alt="Product Image" />
+                    </div>
+                </div>
+                
+                <div class="product-basic-info">
+                    <div class="product-header">
+                        <div class="product-title-section">
+                            <h1 id="productTitle">Назва продукту</h1>
+                            <p id="productDescription" class="product-description">Опис продукту</p>
+                        </div>
+                        <div class="product-price">
+                            <span class="price-label">від</span>
+                            <span id="productPrice" class="price-value">0 ₴</span>
+                        </div>
+                    </div>
+                    
+                    <div class="product-actions">
+                        <button class="request-quote-btn">Запросити пропозицію</button>
+                        <button class="contact-btn">Зв'язатися з нами</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Product Details Tabs -->
+            <section class="product-details-tabs">
+                <div class="tabs-navigation">
+                    <button class="tab-btn active" data-tab="specifications">Характеристики</button>
+                    <button class="tab-btn" data-tab="features">Особливості</button>
+                    <button class="tab-btn" data-tab="customization">Кастомізація</button>
+                </div>
+
+                <div class="tabs-content">
+                    <!-- Specifications Tab -->
+                    <div id="specifications" class="tab-content active">
+                        <h3>Технічні характеристики</h3>
+                        <div id="specificationsContent" class="specifications-grid">
+                            <!-- Specifications will be dynamically populated -->
+                        </div>
+                    </div>
+
+                    <!-- Features Tab -->
+                    <div id="features" class="tab-content">
+                        <h3>Особливості та переваги</h3>
+                        <div class="features-list">
+                            <div class="feature-item">
+                                <div class="feature-icon">✓</div>
+                                <div class="feature-text">
+                                    <h4>Професійна якість</h4>
+                                    <p>Виготовлено з високоякісних матеріалів згідно європейських стандартів</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">✓</div>
+                                <div class="feature-text">
+                                    <h4>Надійність</h4>
+                                    <p>Протестовано в реальних умовах ветеринарних клінік</p>
+                                </div>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">✓</div>
+                                <div class="feature-text">
+                                    <h4>Гарантія</h4>
+                                    <p>Повна гарантія та сервісна підтримка після покупки</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Customization Tab -->
+                    <div id="customization" class="tab-content">
+                        <h3>Можливості кастомізації</h3>
+                        <div class="customization-options">
+                            <div class="custom-option">
+                                <h4>Розміри</h4>
+                                <p>Можливість виготовлення під індивідуальні розміри згідно ваших потреб</p>
+                            </div>
+                            <div class="custom-option">
+                                <h4>Додаткові функції</h4>
+                                <p>Встановлення додаткового обладнання та аксесуарів</p>
+                            </div>
+                            <div class="custom-option">
+                                <h4>Матеріали</h4>
+                                <p>Вибір матеріалів та покриттів відповідно до специфіки використання</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Related Products Section -->
+            <section class="related-products">
+                <h3>Інші продукти з цієї категорії</h3>
+                <div class="related-products-container">
+                    <div class="related-products-scroll" id="relatedProductsScroll">
+                        <!-- Related products will be dynamically populated -->
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Зв'яжіться з нами</h3>
+                    <div class="contact-item">
+                        <img src="../assets/icons/email.png" alt="Email" class="contact-icon">
+                        <a href="mailto:vetstolua@gmail.com" class="contact-link">vetstolua@gmail.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <img src="../assets/icons/telephone.png" alt="Телефон" class="contact-icon">
+                        <a href="tel:+380671234567" class="contact-link">+38 (067) 123-45-67</a>
+                    </div>
+                    <div class="contact-item">
+                        <img src="../assets/icons/express-delivery.png" alt="Доставка" class="contact-icon">
+                        <span>Україна, доставка по всій території</span>
+                    </div>
+                    <div class="contact-item social-link">
+                        <img src="../assets/icons/instagram.png" alt="Instagram" class="contact-icon">
+                        <a href="https://www.instagram.com/vetstol_ua/" target="_blank">@vetstol_ua</a>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Ваше ім'я" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Ваш email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Ваш телефон">
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Ваше повідомлення про продукт"></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Відправити запит</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Vetstolua. Всі права захищені.</p>
+        </div>
+    </footer>
+
+    <script type="module">
+        import dataStore from '../js/models/dataStore.js';
+
+        // Mobile menu functionality
+        function initMobileMenu() {
+            const header = document.querySelector(".main-header");
+            const mobileMenuToggle = document.querySelector(".mobile-menu-toggle");
+            const navMenu = document.querySelector(".nav-menu");
+
+            if (mobileMenuToggle && navMenu) {
+                mobileMenuToggle.addEventListener("click", function(e) {
+                    e.preventDefault();
+                    navMenu.classList.toggle("active");
+                    document.body.classList.toggle("menu-open");
+                });
+
+                document.querySelectorAll(".nav-link").forEach(link => {
+                    link.addEventListener("click", function() {
+                        navMenu.classList.remove("active");
+                        document.body.classList.remove("menu-open");
+                    });
+                });
+            }
+
+            if (header) {
+                window.addEventListener("scroll", function() {
+                    if (window.scrollY > 50) {
+                        header.classList.add("scrolled");
+                    } else {
+                        header.classList.remove("scrolled");
+                    }
+                });
+            }
+        }
+
+        // Initialize mobile menu
+        initMobileMenu();
+
+        // Get product ID from URL parameters
+        const params = new URLSearchParams(window.location.search);
+        const productId = parseInt(params.get('product'));
+
+        // Get product data
+        const product = dataStore.getProduct(productId);
+        
+        if (product) {
+            // Update page title
+            document.title = `Vetstol - ${product.name}`;
+            
+            // Update breadcrumbs
+            const category = dataStore.getCategory(product.category);
+            if (category) {
+                document.getElementById('categoryBreadcrumb').textContent = category.name;
+                document.getElementById('categoryBreadcrumb').href = `categoryDetails.html?category=${product.category}`;
+            }
+            document.getElementById('productBreadcrumb').textContent = product.name;
+            
+            // Update product info
+            document.getElementById('productTitle').textContent = product.name;
+            document.getElementById('productDescription').textContent = product.description;
+            
+            // Handle price display - check price type
+            const priceElement = document.getElementById('productPrice');
+            const priceLabelElement = document.querySelector('.price-label');
+            
+            if (product.priceType === 'custom') {
+                // Custom pricing - show "ціна За запитом"
+                priceLabelElement.textContent = 'ціна';
+                priceElement.textContent = 'За запитом';
+            } else {
+                // Fixed pricing - show "від" and currency
+                priceLabelElement.textContent = 'від';
+                priceElement.textContent = `${product.price.toLocaleString()} ₴`;
+            }
+            
+            document.getElementById('productMainImage').src = product.images[0];
+            document.getElementById('productMainImage').alt = product.name;
+            
+            // Update specifications
+            const specificationsContent = document.getElementById('specificationsContent');
+            specificationsContent.innerHTML = '';
+            
+            if (product.specifications) {
+                Object.entries(product.specifications).forEach(([key, value]) => {
+                    const specItem = document.createElement('div');
+                    specItem.className = 'spec-item';
+                    specItem.innerHTML = `
+                        <div class="spec-label">${key}:</div>
+                        <div class="spec-value">${value}</div>
+                    `;
+                    specificationsContent.appendChild(specItem);
+                });
+            }
+
+            // Load related products from the same category
+            const relatedProducts = dataStore.getProductsByCategory(product.category)
+                .filter(p => p.id !== product.id) // Exclude current product
+                .slice(0, 6); // Limit to 6 products
+
+            const relatedProductsContainer = document.getElementById('relatedProductsScroll');
+            relatedProductsContainer.innerHTML = '';
+
+            relatedProducts.forEach(relatedProduct => {
+                const productCard = document.createElement('div');
+                productCard.className = 'related-product-card';
+                productCard.innerHTML = `
+                    <div class="related-product-image">
+                        <img src="${relatedProduct.images[0]}" alt="${relatedProduct.name}" />
+                    </div>
+                    <div class="related-product-info">
+                        <h4 class="related-product-title">${relatedProduct.name}</h4>
+                        <p class="related-product-description">${relatedProduct.description}</p>
+                        <div class="related-product-price">
+                            <span class="price-value">${relatedProduct.priceType === 'custom' ? 'За запитом' : relatedProduct.price.toLocaleString() + ' ₴'}</span>
+                        </div>
+                    </div>
+                `;
+
+                // Add click handler to navigate to product details
+                productCard.addEventListener('click', () => {
+                    window.location.href = `productDetails.html?product=${relatedProduct.id}`;
+                });
+
+                relatedProductsContainer.appendChild(productCard);
+            });
+        } else {
+            // Handle product not found
+            window.location.href = '../index.html#categories';
+        }
+
+        // Tab functionality
+        const tabButtons = document.querySelectorAll('.tab-btn');
+        const tabContents = document.querySelectorAll('.tab-content');
+
+        tabButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const targetTab = button.getAttribute('data-tab');
+                
+                // Remove active class from all buttons and contents
+                tabButtons.forEach(btn => btn.classList.remove('active'));
+                tabContents.forEach(content => content.classList.remove('active'));
+                
+                // Add active class to clicked button and corresponding content
+                button.classList.add('active');
+                document.getElementById(targetTab).classList.add('active');
+            });
+        });
+
+        // Contact button functionality
+        document.querySelector('.contact-btn').addEventListener('click', () => {
+            document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+        });
+
+        document.querySelector('.request-quote-btn').addEventListener('click', () => {
+            document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+            // Pre-fill the message with product info
+            const textarea = document.querySelector('#contact textarea');
+            textarea.value = `Мене цікавить "${product.name}". Прошу надіслати комерційну пропозицію.`;
+        });
+    </script>
+</body>
+</html>

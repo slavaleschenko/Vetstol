@@ -257,11 +257,11 @@
     line-height: 1.6;
     margin: 0;
     display: -webkit-box;
-    -webkit-line-clamp: 3;
-    line-clamp: 3;
+    -webkit-line-clamp: 4;
+    line-clamp: 4;
     -webkit-box-orient: vertical;
     overflow: hidden;
-    height: 67px; /* Fixed height for 3 lines */
+    height: 90px; /* Fixed height for 4 lines (14px * 1.6 * 4 = ~89.6px) */
     flex-grow: 1; /* Allow description to take available space */
 }
 

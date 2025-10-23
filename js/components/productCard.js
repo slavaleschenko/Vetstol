@@ -16,7 +16,7 @@ function getProductCardTemplate(product) {
             <p class="product-description">${product.description}</p>
             <div class="product-footer">
                 <div class="price">${formatPrice(product.price)}</div>
-                <button class="view-details" onclick="window.location.href='productDetails.html?id=${product.id}'">
+                <button class="view-details" onclick="window.location.href='productDetails.html?product=${product.id}'">
                     Детальніше
                 </button>
             </div>
