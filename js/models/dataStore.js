@@ -88,7 +88,7 @@ class DataStore {
                     features: 'Спеціальний виріз для УЗД датчика',
                     surface: 'Тепла поверхня з антиковзаючим покриттям'
                 },
-                images: ['../assets/images/products/product_placeholder.jpg'],
+                images: ['../assets/images/products/product_id_3.jpeg'],
                 price: 28000
             },
             {
@@ -188,7 +188,7 @@ class DataStore {
                     features: 'Антиковзаюче покриття дна, кріплення для фіксації',
                     accessories: 'Душовий шланг, тримач для шампуню'
                 },
-                images: ['../assets/images/products/product_placeholder.jpg'],
+                images: ['../assets/images/products/product_id_9.jpeg'],
                 price: 32000
             },
             {
